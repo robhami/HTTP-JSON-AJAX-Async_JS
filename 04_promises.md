@@ -37,6 +37,7 @@ movePlayer(100,'Left')
    .then(() => movePlayer(10, 'Right'))
      .then(() => movePlayer(330, 'Left'))
 ```
+### Create Promise ###
 To create a promise (add below to console): 
 ```
 const promise = new Promise ((resolve, reject) => {
@@ -52,7 +53,7 @@ Then run the promise and make it true?how?by making if = true:
 ```
 promise.then(result => console.log(result));
 ```
-
+### Chain Promises ###
 Can chain then's to add ! mark: 
 
 ```
@@ -62,6 +63,7 @@ Can chain then's to add ! mark:
 <VM122:3 Stuff worked!
 ```
 
+### catch error method ###
 Can use .catch method to catch errors (need curly brackets around result2 function): 
 ```
 promise
@@ -107,6 +109,7 @@ users:1 Uncaught (in promise) ƒ Error() { [native code] }
 
 So need to put catch at end, as only checks before .catch statment. 
 
+### Promise all ###
 Promise.all() - takes an array of promises and deals with them together. 
 
 Below will not log until all promises have been resolved (e.g. 3000 ms).
